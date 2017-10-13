@@ -8,5 +8,6 @@ namespace TpIGL1
 {
     class StringHelper
     {
+
     }
 }

@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TpIGL1"
         mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="138*"/>
+            <ColumnDefinition Width="379*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="0,42,0,0" VerticalAlignment="Top" Width="84" Height="25"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="248.895,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Rectangle x:Name="rect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="319" Stroke="Black" VerticalAlignment="Top" Width="106" />
+
     </Grid>
 </Window>

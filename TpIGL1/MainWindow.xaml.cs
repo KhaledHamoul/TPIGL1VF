@@ -24,5 +24,7 @@ namespace TpIGL1
         {
             InitializeComponent();
         }
+
+        
     }
 }
