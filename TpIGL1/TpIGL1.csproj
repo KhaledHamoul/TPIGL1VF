@@ -82,7 +82,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\AccueilViewModel.cs" />
+    <Compile Include="ViewModel\EliminerMotsVidesViewModel.cs" />
+    <Compile Include="ViewModel\IPageViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="MyICommand.cs" />
+    <Compile Include="rectControl.xaml.cs">
+      <DependentUpon>rectControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StringHelper.cs" />
+    <Compile Include="Views\AccueilView.xaml.cs">
+      <DependentUpon>AccueilView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EliminerMotsVidesView.xaml.cs">
       <DependentUpon>EliminerMotsVidesView.xaml</DependentUpon>
     </Compile>
@@ -113,6 +124,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="rectControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AccueilView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\EliminerMotsVidesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

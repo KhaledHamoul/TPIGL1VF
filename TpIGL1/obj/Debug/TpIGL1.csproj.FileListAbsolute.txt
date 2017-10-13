@@ -38,3 +38,8 @@ C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\TpIGL1.Properties.Res
 C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\TpIGL1.csproj.GenerateResource.Cache
 C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\TpIGL1.exe
 C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\TpIGL1.pdb
+C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\rectControl.g.cs
+C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\rectControl.baml
+C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\Views\AccueilView.g.cs
+C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\obj\Debug\Views\AccueilView.baml

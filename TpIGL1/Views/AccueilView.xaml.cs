@@ -13,20 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TpIGL1
+namespace TpIGL1.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AcceuilView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AcceuilView : UserControl
     {
-        public MainWindow()
+        public AcceuilView()
         {
             InitializeComponent();
         }
-
-       
-
-       
     }
 }

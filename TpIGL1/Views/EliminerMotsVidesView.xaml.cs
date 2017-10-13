@@ -18,11 +18,13 @@ namespace TpIGL1.Views
     /// <summary>
     /// Interaction logic for EliminerMotsVidesView.xaml
     /// </summary>
-    public partial class EliminerMotsVidesView : Page
+    public partial class EliminerMotsVidesView : UserControl
     {
         public EliminerMotsVidesView()
         {
             InitializeComponent();
         }
+
+       
     }
 }

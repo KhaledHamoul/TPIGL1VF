@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Khaled Hamoul\Desktop\1CS\TpIGL1\TpIGL1\App.xaml
-7638890950
+9-1462223611
 
-12-1931827483
+192101554721
 70-271749589
-MainWindow.xaml;Views\EliminerMotsVidesView.xaml;Views\FractionnerChainesView.xaml;Views\JoindreChainesView.xaml;Views\MajMinTextView.xaml;Views\NmbrOccurencesMotView.xaml;Views\PermutationCharsView.xaml;
+MainWindow.xaml;rectControl.xaml;Views\AccueilView.xaml;Views\EliminerMotsVidesView.xaml;Views\FractionnerChainesView.xaml;Views\JoindreChainesView.xaml;Views\MajMinTextView.xaml;Views\NmbrOccurencesMotView.xaml;Views\PermutationCharsView.xaml;
 
 False
 

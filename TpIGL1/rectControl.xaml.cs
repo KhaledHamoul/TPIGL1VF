@@ -16,17 +16,13 @@ using System.Windows.Shapes;
 namespace TpIGL1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for rectControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class rectControl : UserControl
     {
-        public MainWindow()
+        public rectControl()
         {
             InitializeComponent();
         }
-
-       
-
-       
     }
 }

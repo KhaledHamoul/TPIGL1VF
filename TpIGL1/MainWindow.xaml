@@ -9,16 +9,56 @@
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
+        xmlns:views = "clr-namespace:TpIGL1.Views" 
+        xmlns:viewModels = "clr-namespace:TpIGL1.ViewModel" 
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" MinHeight="600"   MinWidth="960" MaxHeight="600" MaxWidth="960">
+
+    <Window.DataContext>
+        <viewModels:MainWindowViewModel/>
+    </Window.DataContext>
+    
+    <Window.Resources>
+
+
+        <DataTemplate DataType = "{x:Type viewModels:AccueilViewModel}">
+            <views:AcceuilView/>
+        </DataTemplate>
+        <DataTemplate DataType = "{x:Type viewModels:EliminerMotsVidesViewModel}">
+            <views:EliminerMotsVidesView/>
+        </DataTemplate>
+
+
+        <Storyboard x:Key="OnMouseEnter1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-17.188"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-25"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="138*"/>
-            <ColumnDefinition Width="379*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="0,42,0,0" VerticalAlignment="Top" Width="84" Height="25"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="248.895,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Rectangle x:Name="rect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="319" Stroke="Black" VerticalAlignment="Top" Width="106" />
+
+        <Grid Grid.Column="0">
+            <StackPanel x:Name="sideMenu" Background="White">
+                <Button x:Name="accueilBtn"  Content="Acceuil" Margin="0,30,0,0"   VerticalAlignment="Center" Width="100" Height="25" Command="{Binding ICommandAccueil}" />
+                <Button x:Name="jointureBtn"  Content="jointure" Margin="18,40,18,0"   VerticalAlignment="Center" Width="100" Height="25"  />
+                <Button x:Name="eliminerMotsVides"  Content="mots vides" Margin="18,10,18,0"   VerticalAlignment="Center" Width="100" Height="25" Command="{Binding ICommandshowEliminerMotsVides}"  />
+                <Button x:Name="fractionBtn"  Content="Fraction" Margin="18,10,18,0"   VerticalAlignment="Center" Width="100" Height="25" />
+                <Button x:Name="minMajBtn"  Content="Min/Maj" Margin="18,10,18,0"   VerticalAlignment="Center" Width="100" Height="25" />
+                <Button x:Name="nmbrOccurenceBtn"  Content="N° accurences" Margin="23,10,23,0"   VerticalAlignment="Center" Width="100" Height="25" />
+                <Button x:Name="permutationBtn"  Content="Permutation" Margin="23,10,23,0"   VerticalAlignment="Center" Width="100" Height="25" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1" >
+            <ContentControl Content="{Binding PageActuelle}" />
+        </Grid>
+       
 
     </Grid>
 </Window>
