@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpIGL1", "TpIGL1\TpIGL1.csproj", "{9940140A-77A8-47FA-AF95-348905080574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpIGL1.Test.Unit", "TpIGL1.Test.Unit\TpIGL1.Test.Unit.csproj", "{09073E63-249E-407B-A031-D1023024FEBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{9940140A-77A8-47FA-AF95-348905080574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9940140A-77A8-47FA-AF95-348905080574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9940140A-77A8-47FA-AF95-348905080574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09073E63-249E-407B-A031-D1023024FEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09073E63-249E-407B-A031-D1023024FEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09073E63-249E-407B-A031-D1023024FEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09073E63-249E-407B-A031-D1023024FEBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FA44F74-C025-4774-BEE7-741BD8500BAF}
 	EndGlobalSection
 EndGlobal
