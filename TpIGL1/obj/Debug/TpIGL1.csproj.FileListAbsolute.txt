@@ -88,3 +88,6 @@ C:\MyFiles\Studies_Projects\IGL\TpIGL1\TpIGL1\obj\Debug\TpIGL1.csproj.GenerateRe
 C:\MyFiles\Studies_Projects\IGL\TpIGL1\TpIGL1\obj\Debug\TpIGL1.csproj.CoreCompileInputs.cache
 C:\MyFiles\Studies_Projects\IGL\TpIGL1\TpIGL1\obj\Debug\TpIGL1.exe
 C:\MyFiles\Studies_Projects\IGL\TpIGL1\TpIGL1\obj\Debug\TpIGL1.pdb
+C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\bin\Debug\TpIGL1.exe.config
+C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\obj\Debug\TpIGL1.exe
+C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\obj\Debug\TpIGL1.pdb
