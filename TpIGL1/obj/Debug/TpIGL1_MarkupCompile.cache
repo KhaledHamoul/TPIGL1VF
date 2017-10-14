@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\MyFiles\Studies_Projects\IGL\TpIGL1\TpIGL1\obj\Debug\
+C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\obj\Debug\
 TpIGL1
 none
 false
 DEBUG;TRACE
-C:\MyFiles\Studies_Projects\IGL\TpIGL1\TpIGL1\App.xaml
+C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\App.xaml
 9-1462223611
 
 20-2147389250
-70-549097745
+70836243020
 MainWindow.xaml;rectControl.xaml;Views\AccueilView.xaml;Views\EliminerMotsVidesView.xaml;Views\FractionnerChainesView.xaml;Views\JoindreChainesView.xaml;Views\MajMinTextView.xaml;Views\NmbrOccurencesMotView.xaml;Views\PermutationCharsView.xaml;
 
 False
