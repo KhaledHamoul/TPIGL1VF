@@ -12,12 +12,12 @@
         xmlns:views = "clr-namespace:TpIGL1.Views" 
         xmlns:viewModels = "clr-namespace:TpIGL1.ViewModel" 
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
-        Title="MainWindow" MinHeight="600"   MinWidth="960" MaxHeight="600" MaxWidth="960">
+        Title="MainWindow" MinHeight="600"   MinWidth="960"  >
 
     <Window.DataContext>
         <viewModels:MainWindowViewModel/>
     </Window.DataContext>
-    
+
     <Window.Resources>
 
 
@@ -26,6 +26,21 @@
         </DataTemplate>
         <DataTemplate DataType = "{x:Type viewModels:EliminerMotsVidesViewModel}">
             <views:EliminerMotsVidesView/>
+        </DataTemplate>
+        <DataTemplate DataType = "{x:Type viewModels:FractionnerChainesViewModel}">
+            <views:FractionnerChainesView/>
+        </DataTemplate>
+        <DataTemplate DataType = "{x:Type viewModels:JoindreChainesViewModel}">
+            <views:JoindreChainesView/>
+        </DataTemplate>
+        <DataTemplate DataType = "{x:Type viewModels:MajMinTextViewModel}">
+            <views:MajMinTextView/>
+        </DataTemplate>
+        <DataTemplate DataType = "{x:Type viewModels:NmbrOccurencesMotViewModel}">
+            <views:NmbrOccurencesMotView/>
+        </DataTemplate>
+        <DataTemplate DataType = "{x:Type viewModels:PermutationCharsViewModel}">
+            <views:PermutationCharsView/>
         </DataTemplate>
 
 
@@ -46,19 +61,20 @@
 
         <Grid Grid.Column="0">
             <StackPanel x:Name="sideMenu" Background="White">
-                <Button x:Name="accueilBtn"  Content="Acceuil" Margin="0,30,0,0"   VerticalAlignment="Center" Width="100" Height="25" Command="{Binding ICommandAccueil}" />
-                <Button x:Name="jointureBtn"  Content="jointure" Margin="18,40,18,0"   VerticalAlignment="Center" Width="100" Height="25"  />
-                <Button x:Name="eliminerMotsVides"  Content="mots vides" Margin="18,10,18,0"   VerticalAlignment="Center" Width="100" Height="25" Command="{Binding ICommandshowEliminerMotsVides}"  />
-                <Button x:Name="fractionBtn"  Content="Fraction" Margin="18,10,18,0"   VerticalAlignment="Center" Width="100" Height="25" />
-                <Button x:Name="minMajBtn"  Content="Min/Maj" Margin="18,10,18,0"   VerticalAlignment="Center" Width="100" Height="25" />
-                <Button x:Name="nmbrOccurenceBtn"  Content="N° accurences" Margin="23,10,23,0"   VerticalAlignment="Center" Width="100" Height="25" />
-                <Button x:Name="permutationBtn"  Content="Permutation" Margin="23,10,23,0"   VerticalAlignment="Center" Width="100" Height="25" />
+                <Image Source="logo1.png" Margin="35,20,32,0"/>
+                <Button x:Name="accueilBtn"  Content="Acceuil" Margin="0,60,0,0"   VerticalAlignment="Center" Width="130" Height="25" Command="{Binding ICommandAccueil}" />
+                <Button x:Name="JointureBtn"  Content="Jointure" Margin="18,80,18,0"   VerticalAlignment="Center" Width="130" Height="25" Command="{Binding ICommandJoindre}" />
+                <Button x:Name="eliminerMotsVides"  Content="Mots vides" Margin="18,10,18,0"   VerticalAlignment="Center" Width="130" Height="25" Command="{Binding ICommandshowEliminerMotsVides}"  />
+                <Button x:Name="fractionBtn"  Content="Fraction" Margin="18,10,18,0"   VerticalAlignment="Center" Width="130" Height="25" Command="{Binding ICommandFractionner}" />
+                <Button x:Name="minMajBtn"  Content="Min/Maj" Margin="18,10,18,0"   VerticalAlignment="Center" Width="130" Height="25" Command="{Binding ICommandMinMaj}" />
+                <Button x:Name="nmbrOccurenceBtn"  Content="N° occurences" Margin="23,10,23,0"   VerticalAlignment="Center" Width="130" Height="25" Command="{Binding ICommandNmbrOccurence}" />
+                <Button x:Name="permutationBtn"  Content="Permutation" Margin="23,10,23,0"   VerticalAlignment="Center" Width="130" Height="25" Command="{Binding ICommandPermutation}" />
             </StackPanel>
         </Grid>
         <Grid Grid.Column="1" >
-            <ContentControl Content="{Binding PageActuelle}" />
+            <ContentControl Height="600" MinWidth="500" HorizontalAlignment="Center"  Content="{Binding PageActuelle}" />
         </Grid>
-       
+
 
     </Grid>
 </Window>

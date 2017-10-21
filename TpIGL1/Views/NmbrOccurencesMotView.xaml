@@ -5,8 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TpIGL1.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="600" d:DesignWidth="500">
     <Grid>
-            
+
+        <Button x:Name="button" Command="{Binding ICommand}"  Content="Claculer le nombre d'occurence" Margin="32,274,26,294" Height="Auto" Click="button_Click" />
+        <TextBlock x:Name="textBlock" Text="{Binding Result}" Margin="32,367,26,57" TextWrapping="Wrap" Foreground="White"  TextAlignment="Center" LineHeight="18.667" Padding="0,60,0,0"/>
+        <RichTextBox x:Name="richTextBox" HorizontalContentAlignment="Center" Margin="32,32,26,390" Background="{x:Null}" Foreground="White"/>
+        <Rectangle Margin="32,367,26,57" Stroke="#FFABADB3"/>
+        <Label x:Name="label1" Content="Spécifier le mot" Margin="32,232,310,342"/>
+        <TextBox x:Name="textBox" Text="{Binding Mot}" TextAlignment="Center" Margin="195,235,166,342" TextWrapping="Wrap" MaxLength="30"/>
+        <Label x:Name="intermidiate" Content="{Binding InputText,Mode =TwoWay}" Height="0" Width="0"></Label>
+
     </Grid>
 </UserControl>

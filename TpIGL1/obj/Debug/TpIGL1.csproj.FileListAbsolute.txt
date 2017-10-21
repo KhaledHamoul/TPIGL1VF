@@ -132,3 +132,6 @@ C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\obj\Debug\Views\PermutationCharsVie
 C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\obj\Debug\TpIGL1.g.resources
 C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\obj\Debug\TpIGL1.Properties.Resources.resources
 C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\obj\Debug\TpIGL1.csproj.GenerateResource.Cache
+C:\Users\Khaled Hamoul\Desktop\TpIGL1VF\TpIGL1\bin\Debug\TpIGL1.exe.config
+C:\Users\Khaled Hamoul\Desktop\TpIGL1VF\TpIGL1\obj\Debug\TpIGL1.exe
+C:\Users\Khaled Hamoul\Desktop\TpIGL1VF\TpIGL1\obj\Debug\TpIGL1.pdb

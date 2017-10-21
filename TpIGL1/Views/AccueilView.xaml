@@ -5,8 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TpIGL1.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="600" d:DesignWidth="960">
     <Grid>
-        <Label x:Name="label" Content="TP IGL &#xD;&#xA;MADE BY : &#xD;&#xA;        KHALED HAMOUL&#xD;&#xA;        SALAH EDINNE BOUKHOULDA" HorizontalAlignment="Left" Height="123" Margin="25,77,0,0" VerticalAlignment="Top" Width="265" FontWeight="Bold" FontFamily="Segoe Print" FontSize="13.333"/>
+        <Label x:Name="label" Margin="58,318,0,0" HorizontalContentAlignment="Center" Content="&#xA;MADE BY : &#xA;        KHALED HAMOUL&#xA;        SALAH EDINNE BOUKHOULDA" HorizontalAlignment="Left" Height="123"  VerticalAlignment="Top" Width="265" FontWeight="Bold" FontFamily="Segoe Print" FontSize="13.333"/>
+        <Image x:Name="image" Width="300" Height="90" Panel.ZIndex="20" Source="../logo.png" Margin="44,0,45,218"/>
     </Grid>
 </UserControl>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TpIGL1.Traitements;
 
 namespace TpIGL1.Views
 {
@@ -23,6 +24,35 @@ namespace TpIGL1.Views
         public FractionnerChainesView()
         {
             InitializeComponent();
+        }
+
+        private string StringFromRichTextBox(RichTextBox rtb)
+        {
+            TextRange textRange = new TextRange(
+                // TextPointer to the start of content in the RichTextBox.
+                rtb.Document.ContentStart,
+                // TextPointer to the end of content in the RichTextBox.
+                rtb.Document.ContentEnd
+            );
+
+            // The Text property on a TextRange object returns a string
+            // representing the plain text content of the TextRange.
+            return textRange.Text;
+        }
+
+        string inputTxt;
+        List<string> res;
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            ListBoxItem item;
+            inputTxt = StringFromRichTextBox(inputText);
+            res = StringHelper.FractionnerChaine(inputTxt, Char.Parse(separateur.Text));
+            foreach (var str in res )
+            {
+                item = new ListBoxItem();
+                item.Content = str;
+                listBox.Items.Add(item);
+            }
         }
     }
 }

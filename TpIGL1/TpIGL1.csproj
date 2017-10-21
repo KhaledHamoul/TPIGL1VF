@@ -86,12 +86,17 @@
     <Compile Include="Traitements\StringHelper.cs" />
     <Compile Include="ViewModel\AccueilViewModel.cs" />
     <Compile Include="ViewModel\EliminerMotsVidesViewModel.cs" />
+    <Compile Include="ViewModel\FractionnerChainesViewModel.cs" />
     <Compile Include="ViewModel\IPageViewModel.cs" />
+    <Compile Include="ViewModel\JoindreChainesViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="MyICommand.cs" />
     <Compile Include="rectControl.xaml.cs">
       <DependentUpon>rectControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\MajMinTextViewModel.cs" />
+    <Compile Include="ViewModel\NmbrOccurencesMotViewModel.cs" />
+    <Compile Include="ViewModel\PermutationCharsViewModel.cs" />
     <Compile Include="Views\AccueilView.xaml.cs">
       <DependentUpon>AccueilView.xaml</DependentUpon>
     </Compile>
@@ -185,6 +190,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

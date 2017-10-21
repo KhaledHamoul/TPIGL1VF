@@ -5,10 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TpIGL1.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="600" d:DesignWidth="500">
     <Grid>
-        <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="115,129,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="73,173,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" />
+        <Button x:Name="button"  Command="{Binding ICommand}"  Content="Eliminer les mots vides" Margin="32,274,26,294" Height="Auto" Click="button_Click" />
+        <TextBlock x:Name="textBlock"  Panel.ZIndex="100" Text="{Binding Result}" Margin="32,367,26,57" TextWrapping="Wrap" Foreground="White" Cursor="Cross"/>
+        <RichTextBox x:Name="richTextBox" Margin="32,32,26,390" Background="{x:Null}" Foreground="White"/>
+        <Rectangle Margin="32,367,26,57" Stroke="#FFABADB3"/>
+        <Label x:Name="intermidiate" Content="{Binding InputText,Mode =TwoWay}" Height="0" Width="0"></Label>
 
     </Grid>
 </UserControl>

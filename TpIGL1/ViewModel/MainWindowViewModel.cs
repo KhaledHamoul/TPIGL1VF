@@ -16,14 +16,24 @@ namespace TpIGL1.ViewModel
         
         public MyICommand ICommandAccueil { get; set; }
         public MyICommand ICommandshowEliminerMotsVides { get; set; }
-
+        public MyICommand ICommandJoindre { get; set; }
+        public MyICommand ICommandFractionner { get; set; }
+        public MyICommand ICommandMinMaj { get; set; }
+        public MyICommand ICommandNmbrOccurence { get; set; }
+        public MyICommand ICommandPermutation { get; set; }
 
 
         public MainWindowViewModel() {
+            showAccueilView();
             ICommandAccueil = new MyICommand(showAccueilView);
             ICommandshowEliminerMotsVides = new MyICommand(showEliminerMotsVidesView);
-            
-            }
+            ICommandFractionner = new MyICommand(showFractionnerView);
+            ICommandJoindre = new MyICommand(showJoindreView);
+            ICommandMinMaj = new MyICommand(showMinMajView);
+            ICommandNmbrOccurence = new MyICommand(showNmbrOccurenceView);
+            ICommandPermutation = new MyICommand(showPermutationView);
+
+        }
 
         
         private IPageViewModel pageActuelle;
@@ -52,6 +62,27 @@ namespace TpIGL1.ViewModel
         private void showEliminerMotsVidesView()
         {
             this.PageActuelle = new EliminerMotsVidesViewModel();
+        }
+
+        private void showFractionnerView()
+        {
+            this.PageActuelle = new FractionnerChainesViewModel();
+        }
+        private void showJoindreView()
+        {
+            this.PageActuelle = new JoindreChainesViewModel();
+        }
+        private void showMinMajView()
+        {
+            this.PageActuelle = new MajMinTextViewModel();
+        }
+        private void showNmbrOccurenceView()
+        {
+            this.PageActuelle = new NmbrOccurencesMotViewModel();
+        }
+        private void showPermutationView()
+        {
+            this.PageActuelle = new PermutationCharsViewModel();
         }
 
 

@@ -7,9 +7,17 @@ using TpIGL1.Data;
 
 namespace TpIGL1.Traitements
 {
-
+    /// <summary>
+    /// Cette classe contient diverses methodes qui traitent les chaines de characteres
+    /// </summary>
     public class StringHelper
     {
+        /// <summary>
+        /// Joindre plusieur chaines a partir d'un tableau dans une seule chaine
+        /// </summary>
+        /// <param name="tabMots"></param>
+        /// <param name="carSeparationArg"></param>
+        /// <returns>une seule chaine contenant les chaines</returns>
         public static string JoindreChaines(string[] tabMots, char carSeparationArg)
         {
             string motsJoint = string.Empty;
@@ -33,7 +41,13 @@ namespace TpIGL1.Traitements
             }
             return motsJoint;
         }
-
+        
+        /// <summary>
+        /// Fractionne une chaines de caracteres en plusieurs chaines en utilisons un separateur
+        /// </summary>
+        /// <param name="chaineArg"></param>
+        /// <param name="carFractionArg"></param>
+        /// <returns>une liste des chaines divisées</returns>
         public static List<string> FractionnerChaine(string chaineArg, char carFractionArg)
         {
             List<string> chaines = new List<string>();
@@ -64,6 +78,10 @@ namespace TpIGL1.Traitements
             return chaines;
         }
 
+        /// <summary>
+        /// Elimine les mots "ou,et,a,non" d'une chaine de charactere
+        /// </summary>
+        /// <param name="motArg"></param>
         public static void EliminerMotsVides(ref string motArg)
         {
             string nouvelleChaine = motArg;
@@ -81,6 +99,12 @@ namespace TpIGL1.Traitements
             motArg = nouvelleChaine;
         }
 
+        /// <summary>
+        /// Elemine toute occurence d'un mot donné d'une chaine
+        /// </summary>
+        /// <param name="motArg"></param>
+        /// <param name="motEliminerArg"></param>
+        /// <returns>une chaine sans occurence du mot specifié</returns>
         public static string EliminerMot(string motArg, string motEliminerArg)
         {
             string nouvelleChaine = string.Empty;
@@ -110,11 +134,18 @@ namespace TpIGL1.Traitements
             return nouvelleChaine;
         }
 
+        /// <summary>
+        /// verifie si un mot précie existe dans la chaine
+        /// </summary>
+        /// <param name="motArg"></param>
+        /// <param name="motRechArg"></param>
+        /// <param name="startIndexArg"></param>
+        /// <returns>vraie si le mot existe, non sinon</returns>
         private static bool MotExiste(string motArg, string motRechArg, int startIndexArg)
         {
             try
             {
-                if ((startIndexArg == 0) || (motArg[startIndexArg - 1] == Constants.blanc))
+                if ((startIndexArg == 0) || (motArg[startIndexArg - 1] == Constants.blanc) ||(motArg[startIndexArg - 1] == Constants.sautLigne))
                 {
                     if (motRechArg.Length <= motArg.Length - startIndexArg)
                     {
@@ -144,6 +175,10 @@ namespace TpIGL1.Traitements
             }
         }
 
+        /// <summary>
+        /// Met chaque debut de phrase d'un text en Majuscule et le reste en minuscule
+        /// </summary>
+        /// <param name="textArg"></param>
         public static void MajMinText(ref string textArg)
         {
             string nouveauText = string.Empty;
@@ -168,6 +203,12 @@ namespace TpIGL1.Traitements
             textArg = nouveauText;
         }
 
+        /// <summary>
+        /// donne le nombre d'occurences d'un mot dans une chaine de charactere
+        /// </summary>
+        /// <param name="textArg"></param>
+        /// <param name="motRechArg"></param>
+        /// <returns>le nombre d'occurences</returns>
         public static int NmbrOccurencesMot(string textArg, string motRechArg)
         {
             if (string.IsNullOrEmpty(textArg) || string.IsNullOrWhiteSpace(textArg))
@@ -198,6 +239,10 @@ namespace TpIGL1.Traitements
             return nmbrOccur;
         }
 
+        /// <summary>
+        /// permute les characteres d'une chaines deux a deux
+        /// </summary>
+        /// <param name="motArg"></param>
         public static void PermutationChars(ref string motArg)
         {
             string nouveauMot = string.Empty;
@@ -207,9 +252,10 @@ namespace TpIGL1.Traitements
                 if (motArg.Length % 2 != 0) maxIndex = motArg.Length - 1;
                 for (int i = 0; i < maxIndex; i += 2)
                 {
-                    nouveauMot += motArg[i + 1];
-                    nouveauMot += motArg[i];
+                     nouveauMot += motArg[i + 1];
+                     nouveauMot += motArg[i];
                 }
+                if (motArg.Length % 2 != 0) nouveauMot += motArg[motArg.Length - 1];
             }
             catch (Exception ex)
             {
