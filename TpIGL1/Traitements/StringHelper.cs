@@ -257,9 +257,9 @@ namespace TpIGL1.Traitements
                 }
                 if (motArg.Length % 2 != 0) nouveauMot += motArg[motArg.Length - 1];
             }
-            catch (Exception ex)
+            catch (Exception exp)
             {
-                throw new Exception(ex.Message);
+                throw new Exception(exp.Message);
             }
             motArg = nouveauMot;
         }
