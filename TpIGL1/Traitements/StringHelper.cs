@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TpIGL1.Data;
 
 namespace TpIGL1.Traitements
-{ /// commentaire khaled
+{ ///// commentaire salah
     /// <summary>
     /// Cette classe contient diverses methodes qui traitent les chaines de characteres
     /// </summary>
@@ -257,7 +257,9 @@ namespace TpIGL1.Traitements
                 }
                 if (motArg.Length % 2 != 0) nouveauMot += motArg[motArg.Length - 1];
             }
+
             // commentaire  changer
+
             catch (Exception expeption)
             {
                 throw new Exception(expeption.Message);
