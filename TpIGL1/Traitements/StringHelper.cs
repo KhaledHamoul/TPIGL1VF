@@ -257,10 +257,10 @@ namespace TpIGL1.Traitements
                 }
                 if (motArg.Length % 2 != 0) nouveauMot += motArg[motArg.Length - 1];
             }
-            /// commentaire different de celui qui existe dans khaledBr
-            catch (Exception exp)
+            // commentaire
+            catch (Exception expeption)
             {
-                throw new Exception(exp.Message);
+                throw new Exception(expeption.Message);
             }
             motArg = nouveauMot;
         }
