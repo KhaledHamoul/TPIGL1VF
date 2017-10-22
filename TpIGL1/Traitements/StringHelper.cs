@@ -211,9 +211,9 @@ namespace TpIGL1.Traitements
                     nouveauMot += motArg[i];
                 }
             }
-            catch (Exception ex)
+            catch (Exception exep)
             {
-                throw new Exception(ex.Message);
+                throw new Exception(exep.Message);
             }
             motArg = nouveauMot;
         }
