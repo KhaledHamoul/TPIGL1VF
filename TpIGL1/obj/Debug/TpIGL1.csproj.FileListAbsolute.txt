@@ -135,3 +135,6 @@ C:\Users\Khaled Hamoul\Desktop\TpIGL1\TpIGL1\obj\Debug\TpIGL1.csproj.GenerateRes
 C:\Users\Khaled Hamoul\Desktop\TpIGL1VF\TpIGL1\bin\Debug\TpIGL1.exe.config
 C:\Users\Khaled Hamoul\Desktop\TpIGL1VF\TpIGL1\obj\Debug\TpIGL1.exe
 C:\Users\Khaled Hamoul\Desktop\TpIGL1VF\TpIGL1\obj\Debug\TpIGL1.pdb
+C:\Users\Khaled Hamoul\Desktop\salah\TPIGL1VF\TpIGL1\bin\Debug\TpIGL1.exe.config
+C:\Users\Khaled Hamoul\Desktop\salah\TPIGL1VF\TpIGL1\obj\Debug\TpIGL1.exe
+C:\Users\Khaled Hamoul\Desktop\salah\TPIGL1VF\TpIGL1\obj\Debug\TpIGL1.pdb

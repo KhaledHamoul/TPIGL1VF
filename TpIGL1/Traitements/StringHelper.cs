@@ -257,6 +257,7 @@ namespace TpIGL1.Traitements
                 }
                 if (motArg.Length % 2 != 0) nouveauMot += motArg[motArg.Length - 1];
             }
+            /// commentaire different de celui qui existe dans khaledBr
             catch (Exception exp)
             {
                 throw new Exception(exp.Message);
