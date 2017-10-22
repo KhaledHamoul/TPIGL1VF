@@ -257,7 +257,9 @@ namespace TpIGL1.Traitements
                 }
                 if (motArg.Length % 2 != 0) nouveauMot += motArg[motArg.Length - 1];
             }
-            ////// commentaire different  2
+
+            // commentaire  changer
+
             catch (Exception expeption)
             {
                 throw new Exception(expeption.Message);
