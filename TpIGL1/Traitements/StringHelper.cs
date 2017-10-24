@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TpIGL1.Data;
 
 namespace TpIGL1.Traitements
-{ 
+{ // commentaire de salah
     /// <summary>
     /// Cette classe contient diverses methodes qui traitent les chaines de characteres
     /// </summary>
